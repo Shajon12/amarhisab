@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const numFields = parseInt(document.getElementById("numbefields").value);
       const work = document.getElementById("work").value;
       const date = document.getElementById("date").value;
+      const errorMsg = document.getElementById("errorMsg");
 
       if (name && numFields > 0 && date && work !== "Select") {
           addDataRow(name, work, numFields, date);
@@ -13,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
           saveDataToLocalStorage(name, work, numFields, date);
           resetInputs();
       } else {
-          alert("সব ক্ষেত্র পূর্ণ করুন!");
+          errorMsg.innerHTML = " Cannot empty any field : ";
       }
   });
 });
