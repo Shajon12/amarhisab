@@ -1,0 +1,27 @@
+/* Large devices (large desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+.tableBox {
+    width: 44rem;
+}
+
+.tableBox table tr th {
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+}
+
+.tableBox table #showdata td {
+    font-size: 1.2rem;
+    padding: .5rem;
+}
+
+.tableBox table {
+    width: 100%;
+    height: auto;
+}
+
+#totals {
+    width: 26rem!important;
+}
+
+
+}

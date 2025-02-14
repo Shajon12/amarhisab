@@ -1,0 +1,39 @@
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575px) {
+
+    .menu {
+        width: 20%;
+        position: absolute;
+        right: 20px;
+        top: 4rem;
+        height: 100%;
+        display: none;
+    }
+    
+    .menu ul {
+        flex-direction: column;
+    }
+    
+    .tableBox {
+        width: 37rem!important;
+    }
+    
+    .tableBox table tr th {
+        font-size: 1.1rem;
+        letter-spacing: 0.1rem;
+    }
+    
+    .tableBox table #showdata td {
+        font-size: 1.2rem;
+        padding: .5rem;
+    }
+    
+    .tableBox table #showdata td:first-child {
+        font-size: .7rem;
+    }
+
+    #totals {
+        width: 26rem!important;
+    }
+
+}

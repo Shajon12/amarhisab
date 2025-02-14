@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- font awesome css  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/style.css">
+	<!-- small devices css -->
+	<link rel="stylesheet" href="./css/0.css">
+	<link rel="stylesheet" href="./css/1.css">
+	<link rel="stylesheet" href="./css/2.css">
+	<link rel="stylesheet" href="./css/3.css">
+	<link rel="stylesheet" href="./css/4.css">
+	<link rel="stylesheet" href="./css/6.css">
+	<link rel="shortcut icon" href="img/my pic.png" type="image/x-icon">
+	<title>আমার হিসাব: </title>
+</head>
+<body>
+	
+	<!-- header top area start -->
+	<header class="header_top">
+		<div class="time_date_box">
+			<div class="time">
+				সময়: <span> </span>
+			</div>
+
+			<div class="date">
+				<span> 1 জানুয়ারী ২০২৫ </span>
+			</div>
+		</div>
+		<div class="fulldateandtime">
+			<!-- full date and time showing after mobile device  -->
+		</div>
+	</header>
+	<!-- /header top area end-->
+
+	<!-- menu area start  -->
+	<header class="header_bottom">
+		<div class="logo"> <a href="">Sarail Tech</a> </div>
+		<i onclick="menu()" class="fa-solid fa-bars"></i>
+		<div class="menu">
+			<ul>
+				<li> <a href="">Home</a></li>
+				<li> <a href="">About</a></li>
+				<li> <a href="">Gallery</a></li>
+				<li> <a href="">Team</a></li>
+				<li> <a href="">Client</a></li>
+				<li> <a href="">Portfolio</a></li>
+				<li> <a href="">Contact us</a></li>
+			</ul>
+		</div>
+	</header>
+
+
+
+	<!-- main content start  -->
+
+	<section class="section">
+		<div class="container">
+			<div class="main_content">
+				<h2>আমার হিসাব: ‍</h2>
+				<div class="inputGroup">
+					<input type="text"  id="name" placeholder="দলিল লিখক এর নাম: ">
+				</div>
+
+				<div class="inputGroup">
+					<input type="number" value="1" id="numbefields">
+					<input type="date" id="date" >
+				</div>
+
+				<div class="selectGroup">
+					<select id="work" class="work">
+						<option value="Select"> দলিল নির্বাচন করুন: </option>
+						<option value="সাফকবলা"> সাফকবলা </option>
+						<option value="হেবা বিষয়ক ঘোষনা পত্র"> হেবা বিষয়ক ঘোষনা পত্র </option>
+						<option value="দানের ঘোষনা"> দানের ঘোষনা </option>
+						<option value="দান পত্র">দান পত্র</option>
+						<option value="এওয়াজ বদল"> এওয়াজ বদল </option>
+						<option value="হেবাবিল এওয়াজ"> হেবাবিল এওয়াজ </option>
+						<option value="বন্টন নামা"> বন্টন নামা </option>
+						<option value="ভ্রম সংশোধন"> ভ্রম সংশোধন </option>
+					</select>
+				</div>
+				<div class="btn_group">
+					<button id="btn">সংরক্ষণ করুন: </button>
+				</div>
+				<div class="error">
+					<span id="errorMsg" style="color: red; font-weight: bold;font-family: Arial, Helvetica, sans-serif; font-size: 2rem; "></span>
+				</div>
+			</div>
+			<div class="tableBox">
+				<table>
+					<tr>
+						<th> তারিখ: </th>
+						<th>দলিল লিখক এর নাম: </th>
+						<th>দলিল এর প্রকৃতি</th>
+						<th>কয়টি:</th>
+						<th>মুছুন: </th>
+					</tr>
+					<tr id="showdata" >
+						<!-- show data in the place  -->
+					</tr>
+				  </table>
+
+				  <div id="totals">
+					<h3>সর্ব মোট: <span id="total"> 20 </span> </h3>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- main content end  -->
+
+	<!-- footer aera start  -->
+	<div class="footer">
+		<footer> Creator By Shajon Blue 2025 </footer>
+	</div>
+
+
+<script src="js/time.js"></script>
+<script src="js/english.js"></script>
+<script src="js/data.js"></script>
+<script src="./js/menu.js"></script>
+</body>
+</html>
