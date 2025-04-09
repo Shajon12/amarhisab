@@ -1,0 +1,24 @@
+@media (max-width: 992px) {
+    html {
+        font-size: 62.25%;
+        height: 100%;
+    }
+.section{
+    margin-top:10rem;
+}
+    .container{
+        width: 80rem!important;
+        margin: auto;
+    }
+    .tableBox {
+        width: 70rem!important;
+        margin: auto;
+    }
+    #totals{
+        width: 53rem;
+    }
+    .footer{
+        font-size: 3rem;
+    }
+
+  }

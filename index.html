@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- font awesome css  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/max-width-992.css">
+	<link rel="stylesheet" href="css/max-width-480.css">
+	<link rel="stylesheet" href="css/max-width-600.css">
+	<link rel="stylesheet" href="css/max-width-768.css">
+	<link rel="shortcut icon" href="img/flatIcon.PNG" type="image/x-icon">
+	<title>আমার হিসাব: </title>
+</head>
+<body>
+	
+
+	<!-- rain effect  -->
+	<div id="rain"></div>
+
+	<!-- header top area start -->
+	<header class="header_top fix">
+		<div class="time_date_box">
+			<div class="time">
+				সময়: <span> </span>
+			</div>
+
+			<div class="date">
+				<span> 1 জানুয়ারী ২০২৫ </span>
+			</div>
+		</div>
+	</header>
+	<!-- /header top area end-->
+
+	<!-- menu area start  -->
+	<header class="header_bottom fix" >
+		<div class="logo"> <a href="">Tech Chan BD</a> </div>
+		<i onclick="menu()" class="fa-solid fa-bars"></i>
+		<div class="menu">
+			<ul>
+				<li> <a href="">Home</a></li>
+				<li> <a href="">About</a></li>
+				<li> <a href="">Contact us</a></li>
+			</ul>
+		</div>
+	</header>
+
+
+
+	<!-- main content start  -->
+
+	<section class="section fix">
+		<div class="container">
+			<div class="main">
+				<div class="main_content">
+					<h2>আমার হিসাব: ‍</h2>
+					<div class="inputGroup">
+						<input type="text"  id="name" placeholder="দলিল লিখক এর নাম: ">
+					</div>
+	
+					<div class="inputGroup">
+						<input type="number" value="1" id="numbefields">
+						<input type="date" id="date" >
+					</div>
+	
+					<div class="selectGroup">
+						<select id="work" class="work">
+							<option class="bg" value="Select"> দলিল নির্বাচন করুন: </option>
+							<option class="bg" value="সাফকবলা"> সাফকবলা </option>
+							<option class="bg" value="হেবা বিষয়ক ঘোষনা পত্র"> হেবা বিষয়ক ঘোষনা পত্র </option>
+							<option class="bg" value="দানের ঘোষনা"> দানের ঘোষনা </option>
+							<option class="bg" value="দান পত্র">দান পত্র</option>
+							<option class="bg" value="এওয়াজ বদল"> এওয়াজ বদল </option>
+							<option class="bg" value="হেবাবিল এওয়াজ"> হেবাবিল এওয়াজ </option>
+							<option class="bg" value="বন্টন নামা"> বন্টন নামা </option>
+							<option class="bg" value="ভ্রম সংশোধন"> ভ্রম সংশোধন </option>
+						</select>
+					</div>
+					<div class="btn_group">
+						<button id="btn">সংরক্ষণ করুন: </button>
+					</div>
+					<div class="error">
+						<span id="errorMsg" style="color: #0f0; font-weight: bold;font-family: Arial, Helvetica, sans-serif; font-size: 2rem; "></span>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="tableBox">
+			<table style="border-collapse: collapse;">
+				<tr>
+					<th> তারিখ: </th> 
+					<th>দলিল লিখক এর নাম: </th>
+					<th>দলিল এর প্রকৃতি</th>
+					<th>কয়টি:</th>
+					<th>মুছুন: </th>
+				</tr>
+
+
+				<table id="showdata" style="border-collapse: collapse;">
+				
+				</table>
+				
+			  </table>
+
+			  
+
+			  <div id="totals">
+				<h3>সর্ব মোট: <span id="total"> 20 </span> </h3>
+			</div>
+		</div>
+	</section>
+
+	<!-- main content end  -->
+
+	<!-- footer aera start  -->
+	<div class="footer fix">
+		<footer> &copy; 2025 By Shajon Blue All Rights Reserved </footer>
+	</div>
+
+
+<script src="js/time.js"></script>
+<script src="js/english.js"></script>
+<script src="js/data.js"></script>
+
+
+<script>
+	// Function to create the rain effect
+	function createRain() {
+            const rain = document.getElementById("rain");
+            for (let i = 0; i < 100; i++) {
+                const drop = document.createElement("div");
+                drop.classList.add("drop");
+                drop.style.left = `${Math.random() * 100}vw`; // Random horizontal position
+                drop.style.animationDuration = `${Math.random() * 3 + 3}s`; // Random speed
+                drop.style.animationDelay = `${Math.random() * 5}s`; // Random delay
+                rain.appendChild(drop);
+            }
+        }
+
+        // Initialize the rain effect on page load
+        window.onload = createRain;
+</script>
+
+</body>
+</html>

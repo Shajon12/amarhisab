@@ -1,0 +1,56 @@
+@media (max-width: 480px) {
+    html {
+        font-size: 52.25%;
+        background-color: rgb(245, 245, 245);
+    }
+    body{
+        height: 100vh!important;
+    }
+
+    .time_date_box{
+        padding: 0rem 2rem;
+    }
+    .header_bottom .logo a{
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    .header_bottom{
+        padding: 0rem 2rem;
+    }
+    .menu ul{
+        gap: 1rem;
+    }
+    .menu ul li a{
+        font-size: 1.4rem;
+    }
+.section{
+    margin-top:10rem;
+}
+    .container{
+        width: 50rem!important;
+    }
+
+    .tableBox {
+        width: 50rem!important;
+        margin: auto;
+    }
+
+    .tableBox table tbody tr th {
+        font-size: 1rem;
+        width: 14rem!important;
+        padding: 0rem!important;
+    }
+    #showdata tr td{
+        font-size: 1.4rem;
+    }
+    
+
+    #totals{
+        width: 35rem!important;
+    }
+    .footer{
+        font-size: 2rem;
+        margin-top: auto;
+    }
+
+  }

@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+    html {
+        font-size: 52.25%;
+        height: 100%;
+    }
+    .time_date_box{
+        padding: 0rem 1rem;
+    }
+    .menu ul{
+        gap: 2rem!important;
+    }
+.section{
+    margin-top:10rem;
+}
+    .container{
+        width: 60rem!important;
+    }
+
+    #totals{
+        width: 53rem!important;
+    }
+    .footer{
+        font-size: 2rem;
+    }
+
+  }
